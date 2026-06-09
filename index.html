@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Someone Special ❤️</title>
+
+<style>
+body {
+    background: black;
+    color: #ff4d6d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial;
+    text-align: center;
+}
+
+/* Photo style */
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px pink;
+    opacity: 0;
+    animation: showImage 2s forwards;
+}
+
+/* Text animation */
+.text {
+    font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid pink;
+    width: 0;
+    animation: typing 10s steps(200, end) forwards, blink 0.7s infinite;
+    animation-delay: 2s;
+}
+
+/* Animations */
+@keyframes showImage {
+    to { opacity: 1; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+</style>
+</head>
+
+<body>
+
+<img src="photo.jpg" alt="Her Photo">
+
+<div class="text">
+Mne samb samb rakhe tere jhanjhra k jode ❤️<br>
+Meri ro ro we bhi chori bawle se hore 💔<br>
+Mne aye jave yaad teri 😔<br>
+Khaye javve yaad teri jin konya deti sun berri tnhaiii 🥀
+</div>
+
+</body>
+</html>
